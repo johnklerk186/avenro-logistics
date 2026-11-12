@@ -14,7 +14,7 @@
     </div>
 </section>
 
-@if(!request('tracking_number'))
+@if(!isset($shipment) || !$success)
 <!-- Tracking Form -->
 <section class="py-16 bg-mist">
     <div class="max-w-md mx-auto px-4">
