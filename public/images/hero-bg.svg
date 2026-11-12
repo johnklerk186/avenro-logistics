@@ -1,0 +1,107 @@
+<svg width="1920" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF8C42;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E55A2B;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
+      <path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background gradient -->
+  <rect width="1920" height="600" fill="url(#grad1)"/>
+  
+  <!-- Grid pattern -->
+  <rect width="1920" height="600" fill="url(#grid)"/>
+  
+  <!-- Animated shipping routes (lines) -->
+  <g opacity="0.3">
+    <line x1="0" y1="150" x2="600" y2="150" stroke="white" stroke-width="2" stroke-dasharray="10,5">
+      <animate attributeName="stroke-dashoffset" from="0" to="-15" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="300" y1="0" x2="300" y2="400" stroke="white" stroke-width="2" stroke-dasharray="10,5">
+      <animate attributeName="stroke-dashoffset" from="0" to="-15" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="1200" y1="100" x2="1920" y2="300" stroke="white" stroke-width="2" stroke-dasharray="10,5">
+      <animate attributeName="stroke-dashoffset" from="0" to="-15" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="800" y1="600" x2="1400" y2="0" stroke="white" stroke-width="2" stroke-dasharray="10,5">
+      <animate attributeName="stroke-dashoffset" from="0" to="-15" dur="2s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  
+  <!-- Location pins -->
+  <g opacity="0.4">
+    <circle cx="250" cy="150" r="8" fill="white">
+      <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="600" cy="300" r="8" fill="white">
+      <animate attributeName="r" values="8;12;8" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1200" cy="200" r="8" fill="white">
+      <animate attributeName="r" values="8;12;8" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1600" cy="400" r="8" fill="white">
+      <animate attributeName="r" values="8;12;8" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Floating boxes (packages) -->
+  <g opacity="0.2">
+    <rect x="100" y="80" width="40" height="40" fill="white" transform="rotate(15 120 100)">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-20; 0,0" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="800" y="200" width="35" height="35" fill="white" transform="rotate(-10 817 217)">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,15; 0,0" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="1400" y="100" width="45" height="45" fill="white" transform="rotate(20 1422 122)">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-25; 0,0" dur="3.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Plane icon -->
+  <g opacity="0.3" transform="translate(400, 250)">
+    <path d="M 0,-10 L 20,0 L 0,10 L 5,0 Z" fill="white">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 800,-100; 0,0" dur="15s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Truck icon -->
+  <g opacity="0.3" transform="translate(1000, 450)">
+    <rect x="0" y="0" width="50" height="30" fill="white" rx="5"/>
+    <rect x="35" y="-15" width="25" height="15" fill="white" rx="3"/>
+    <circle cx="15" cy="35" r="8" fill="white"/>
+    <circle cx="45" cy="35" r="8" fill="white"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0; -600,0; 0,0" dur="20s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Ship icon -->
+  <g opacity="0.3" transform="translate(200, 500)">
+    <path d="M 10,0 L 50,0 L 60,20 L 0,20 Z" fill="white"/>
+    <rect x="15" y="-20" width="30" height="20" fill="white"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 1200,-50; 0,0" dur="25s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Decorative circles -->
+  <g opacity="0.1">
+    <circle cx="1700" cy="100" r="150" fill="white"/>
+    <circle cx="100" cy="500" r="100" fill="white"/>
+    <circle cx="1500" cy="550" r="80" fill="white"/>
+  </g>
+  
+  <!-- World map dots pattern -->
+  <g opacity="0.15">
+    <circle cx="300" cy="250" r="3" fill="white"/>
+    <circle cx="450" cy="180" r="3" fill="white"/>
+    <circle cx="600" cy="320" r="3" fill="white"/>
+    <circle cx="750" cy="200" r="3" fill="white"/>
+    <circle cx="900" cy="280" r="3" fill="white"/>
+    <circle cx="1050" cy="150" r="3" fill="white"/>
+    <circle cx="1200" cy="350" r="3" fill="white"/>
+    <circle cx="1350" cy="220" r="3" fill="white"/>
+    <circle cx="1500" cy="300" r="3" fill="white"/>
+    <circle cx="1650" cy="180" r="3" fill="white"/>
+  </g>
+</svg>

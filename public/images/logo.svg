@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="160" viewBox="0 0 640 160" role="img" aria-labelledby="title desc">
+  <title id="title">Avenro Logistics</title>
+  <desc id="desc">Premium logistics logo with a deep navy and gold emblem and aligned wordmark</desc>
+
+  <defs>
+    <linearGradient id="grad-navy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16395E"/>
+      <stop offset="100%" stop-color="#0B1F3D"/>
+    </linearGradient>
+    <linearGradient id="grad-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E3C87E"/>
+      <stop offset="55%" stop-color="#C6A15B"/>
+      <stop offset="100%" stop-color="#A8842F"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#0B1F3D" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- ICON: stylized "A" ascent with route line -->
+  <g transform="translate(24,20)" filter="url(#shadow)">
+    <!-- Hexagonal badge -->
+    <path d="M80 6 L142 43 L142 117 L80 154 L18 117 L18 43 Z" fill="url(#grad-navy)"/>
+    <path d="M80 14 L134 47 L134 113 L80 146 L26 113 L26 47 Z" fill="none" stroke="url(#grad-gold)" stroke-width="2.5" opacity="0.85"/>
+    <!-- Stylized A (ascent) -->
+    <path d="M80 118 L52 62 L66 62 L80 88 L94 62 L108 62 Z" fill="url(#grad-gold)"/>
+    <rect x="73" y="96" width="14" height="10" rx="2" fill="url(#grad-gold)"/>
+    <!-- Route arc -->
+    <path d="M40 96 C56 78 104 78 120 96" fill="none" stroke="url(#grad-gold)" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+    <circle cx="120" cy="96" r="5" fill="url(#grad-gold)"/>
+    <circle cx="40" cy="96" r="4" fill="#E3C87E" opacity="0.7"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(178,44)">
+    <text x="0" y="46" font-family="'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" fill="#0B1F3D" letter-spacing="1.5">
+      AVENRO
+    </text>
+    <text x="0" y="84" font-family="'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="600" fill="#C6A15B" letter-spacing="8">
+      LOGISTICS
+    </text>
+    <rect x="2" y="102" width="330" height="5" rx="2.5" fill="url(#grad-gold)"/>
+  </g>
+
+</svg>

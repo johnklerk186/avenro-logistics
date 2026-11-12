@@ -1,0 +1,57 @@
+# Environment & secrets — NEVER commit
+.env
+.env.backup
+.env.production
+.env.local
+.env.*.local
+
+# Dependencies
+/vendor
+/node_modules
+
+# Build output
+/public/build
+/public/hot
+/public/storage
+
+# Laravel storage (keep folder structure, ignore contents)
+/storage/*.key
+/storage/pail
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+/storage/app/*
+!storage/app/.gitignore
+!storage/app/public/.gitignore
+!storage/framework/.gitignore
+!storage/framework/cache/.gitignore
+!storage/framework/sessions/.gitignore
+!storage/framework/testing/.gitignore
+!storage/framework/views/.gitignore
+!storage/logs/.gitignore
+
+# Test / cache artifacts
+.phpunit.result.cache
+.phpunit.cache
+/.phpactor.json
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/auth.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Misc generated
+nul
+*.log
