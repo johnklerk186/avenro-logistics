@@ -25,6 +25,15 @@ Route::post('/chat/initiate', [ChatController::class, 'initiateChat'])->name('ch
 Route::post('/chat/user/send', [ChatController::class, 'userSendMessage'])->name('chat.user.send');
 Route::get('/chat/messages', [ChatController::class, 'getMessages'])->name('chat.messages');
 
+// Temporary one-time admin setup (remove after first use)
+Route::get('/setup-admin/{token}', function (string $token) {
+    if ($token !== '3f6f6691af8d3a78') {
+        abort(404);
+    }
+    (new \Database\Seeders\AdminSeeder())->run();
+    return 'Admin account ready: admin@avenrologistics.com';
+});
+
 Route::get('/login', function () {
     return redirect()->route('admin.login');
 })->name('login');
